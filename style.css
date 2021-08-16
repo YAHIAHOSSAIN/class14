@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.menu{
+    margin: 5px auto;
+    text-align: center;
+}
+ul{
+    text-align: center;
+    background-color: #fff;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    background-color: #48DBFB;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 10px;
+    font-weight: 600;
+    z-index: 1;
+}
+ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    z-index: -1;
+}
+ul li a:hover::after{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+.plan{
+    background-color: #48DBFB;
+    text-align: center;
+    margin-top: -10px;
+    
+}
+.plan h4{
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    margin-top: 100px;  
+}
+.plan h1{
+    color: #fff;
+    margin: 10px 0;
+    font-weight: 900;
+    color: #fff;
+}
+.play{
+    position: relative;
+    width: 124px;
+    height: 54px;
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 50px;
+    line-height: 54px;
+    color: #DDDCDC;
+    border-radius: 10px;
+    z-index: 1;
+    
+}
+.play::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    transition: 0.4s;
+    z-index: -1;
+    
+
+}
+.play:hover::before{
+    width: 100%;
+}
+.gallary{
+
+}
+.common{
+    width: 250px;
+    height: 187.5px;
+    display: inline-block;
+    margin: 10px;
+    transition: 0.4s;
+    
+}
+.common img{
+    max-width: 100%;
+}
+.div{
+    text-align: center;
+}
+.div1:hover{
+    transform: rotate(360deg);
+    
+}
+.div2:hover{
+    transform: rotate(45deg);
+}
+.div3:hover{
+    transform: rotate(-45deg);
+}
+.div4:hover{
+    transform: rotate(-45deg);
+}
+.fotter{
+    margin-top: 130px;
+    text-align: center;
+    
+
+}
+.fotter h2{
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+.fotter p{
+    color: #9290A2;
+    text-align: justify;
+}
+.body{
+    width: 1100px;
+    margin: 0 auto;
+}
+.step{
+    text-align: center;
+    margin: 0 20px;
+}
+.step1{
+    width: 80px;
+    height: 45px;
+    line-height: 45px;
+    background: black;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    transform: rotate(-50deg);
+    display: inline-block;
+}
+.step2{
+    display: inline-block;
+    width: 80px;
+    height: 45px;
+    line-height: 45px;
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+}
+.step3{width: 80px;
+    height: 45px;
+    line-height: 45px;
+    background: black;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    transform: rotate(50deg);
+    display: inline-block;
+}
+.m{
+    margin: 0 120px;
+}
+.bottom{
+    background-color: #2E2F31;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 25px;
+}

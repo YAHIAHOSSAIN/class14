@@ -21,7 +21,10 @@ ul li a{
     display: inline-block;
     padding: 15px 10px;
     font-weight: 600;
-    z-index: -1;
+}
+ul li a:hover{
+    text-decoration: none;
+    background-color: #fff;
 }
 ul li a::after{
     content: "";
@@ -31,14 +34,11 @@ ul li a::after{
     display: block;
     visibility: hidden;
     transition: 0.4s;
-    z-index: 1;
 
 }
-ul li a:hover::after
+ul li a:hover::after{
     visibility: visible;
     width: 100%;
-    text-decoration: none;
-    background-color: #fff;
 }
 
 .plan{
@@ -88,44 +88,47 @@ ul li a:hover::after
 .play:hover::before{
     width: 100%;
 }
-.gallary{
-
-}
-.common{
-    width: 250px;
-    height: 187.5px;
-    display: inline-block;
-    transition: 0.4s;
-    overflow: hidden;
-}
-.figure {
-	width: 250px;
-	height: 187.5px;
-	padding: 0;
-    margin: 0;
-	background: #fff;
-	overflow: hidden;
-}
-.common img{
-    max-width: 100%;
-    border: 1px solid #fff;
-}
-.div{
+.maindiv{
     text-align: center;
 }
-.div1:hover{
-    transform: rotate(360deg);
-    
+.div, .div{
+    display: inline-block;
+    width: 250px;
+    height: 188px;
+    margin: 5px;
+    overflow: hidden;
 }
-.div2:hover{
+.div img {
+    max-width: 100%;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+/* hover item start */
+.div1:hover img{
+	transform: rotate(360deg) scale(1);
+}
+.div2:hover img{
     transform: rotate(45deg);
 }
-.div3:hover{
+.div3:hover img{
     transform: rotate(-45deg);
 }
-.div4:hover{
-    transform: rotate(-45deg);
+.div4:hover img{
+    transform: rotate(-45deg) scale(1.25);
 }
+.div5:hover img{
+    transform: rotate(45deg) scale(1.25);
+}
+.div6:hover img{
+    transform: rotate(360deg);
+}
+.div7:hover img{
+    transform: rotate(25deg) scale(1.5);
+}
+.div8:hover img{
+    transform: rotate(-25deg) scale(1.5);
+}
+/* footer item end */
 .fotter{
     margin-top: 130px;
     text-align: center;
@@ -148,6 +151,7 @@ ul li a:hover::after
 .step{
     text-align: center;
     margin: 0 20px;
+    
 }
 .step1{
     width: 80px;
@@ -159,6 +163,20 @@ ul li a:hover::after
     font-weight: 600;
     transform: rotate(-50deg);
     display: inline-block;
+    transition: 0.4s;
+    
+}
+.step1:hover{
+    transform: rotate(0) scale(1.25);
+    background-color: #48DBFB;
+}
+.step2:hover{
+    transform: rotate(0) scale(1.25);
+    background-color: #48DBFB;
+}
+.step3:hover{
+    transform: rotate(0) scale(1.25);
+    background-color: #48DBFB;
 }
 .step2{
     display: inline-block;
@@ -168,6 +186,7 @@ ul li a:hover::after
     background-color: black;
     color: #fff;
     font-weight: 600;
+    transition: 0.4s;
 }
 .step3{width: 80px;
     height: 45px;
@@ -178,6 +197,7 @@ ul li a:hover::after
     font-weight: 600;
     transform: rotate(50deg);
     display: inline-block;
+    transition: 0.4s;
 }
 .m{
     margin: 0 120px;

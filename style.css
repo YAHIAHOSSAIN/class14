@@ -22,25 +22,24 @@ ul li a{
     display: inline-block;
     padding: 15px 10px;
     font-weight: 600;
-    z-index: 1;
+    z-index: -1;
 }
 ul li a::after{
     content: "";
-    width: 0;
-    height: 2px;
-    background: black;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    opacity: 0;
+    background-color: #010101;
+    height: 2.5PX;
+    width: 0%;
+    display: block;
     visibility: hidden;
     transition: 0.4s;
-    z-index: -1;
+    z-index: 1;
+
 }
 ul li a:hover::after{
     opacity: 1;
     visibility: visible;
     width: 100%;
+    text-decoration: none;
 }
 
 .plan{
@@ -97,12 +96,20 @@ ul li a:hover::after{
     width: 250px;
     height: 187.5px;
     display: inline-block;
-    margin: 10px;
     transition: 0.4s;
-    
+    overflow: hidden;
+}
+.figure {
+	width: 250px;
+	height: 187.5px;
+	padding: 0;
+    margin: 0;
+	background: #fff;
+	overflow: hidden;
 }
 .common img{
     max-width: 100%;
+    border: 1px solid #fff;
 }
 .div{
     text-align: center;

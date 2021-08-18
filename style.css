@@ -13,7 +13,6 @@ ul{
 }
 ul li{
     display: inline-block;
-    position: relative;
 }
 ul li a{
     background-color: #48DBFB;
@@ -35,11 +34,11 @@ ul li a::after{
     z-index: 1;
 
 }
-ul li a:hover::after{
-    opacity: 1;
+ul li a:hover::after
     visibility: visible;
     width: 100%;
     text-decoration: none;
+    background-color: #fff;
 }
 
 .plan{
